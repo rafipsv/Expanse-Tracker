@@ -1,10 +1,9 @@
 // ignore_for_file: file_names
 
 import 'package:animate_do/animate_do.dart';
+import 'package:expanse_manager/Styles/HomePageStyles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_glow/flutter_glow.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomeDetailsBox extends StatelessWidget {
   const HomeDetailsBox({super.key});
@@ -40,16 +39,16 @@ class HomeDetailsBox extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  customText(false, "Today"),
-                  customText(false, "This Month"),
+                  homeDetailsBoxTitle(false, "Today"),
+                  homeDetailsBoxTitle(false, "This Month"),
                 ],
               ),
               SizedBox(height: 20.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  customText(true, "100000"),
-                  customText(true, "10000000"),
+                  homeDetailsBoxTitle(true, "100000"),
+                  homeDetailsBoxTitle(true, "10000000"),
                 ],
               ),
             ],
@@ -59,14 +58,5 @@ class HomeDetailsBox extends StatelessWidget {
     );
   }
 
-  Widget customText(bool isAmount, String title) {
-    return GlowText(
-      title,
-      style: GoogleFonts.caveat(
-        color: isAmount ? Colors.white : Colors.white.withOpacity(0.8),
-        fontSize: 25.sp,
-        fontWeight: isAmount ? FontWeight.w800 : FontWeight.w700,
-      ),
-    );
-  }
+  
 }

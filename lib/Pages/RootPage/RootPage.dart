@@ -3,6 +3,7 @@
 import 'package:expanse_manager/Pages/HomePage/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RootPage extends StatefulWidget {
   const RootPage({super.key});
@@ -35,12 +36,20 @@ class _RootPageState extends State<RootPage> {
           });
         },
         selectedIconTheme: const IconThemeData(
-          color: Color(0xff35a79c),
+          color: Color.fromARGB(255, 16, 170, 134),
         ),
         selectedItemColor: const Color(0xff35a79c),
         unselectedItemColor: Colors.white,
         unselectedIconTheme: const IconThemeData(
           color: Colors.white,
+        ),
+        selectedLabelStyle: GoogleFonts.caveat(
+          color: const Color.fromARGB(255, 16, 170, 134),
+          fontWeight: FontWeight.w800,
+        ),
+        unselectedLabelStyle: GoogleFonts.caveat(
+          color: Colors.white,
+          fontWeight: FontWeight.w700,
         ),
         items: const [
           BottomNavigationBarItem(icon: FaIcon(Icons.home), label: "Home"),
