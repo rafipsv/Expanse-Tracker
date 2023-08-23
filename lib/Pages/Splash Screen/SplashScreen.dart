@@ -3,7 +3,7 @@
 import 'dart:async';
 
 import 'package:animate_do/animate_do.dart';
-import 'package:expanse_manager/Pages/HomePage/HomePage.dart';
+import 'package:expanse_manager/Pages/RootPage/RootPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:glowstone/glowstone.dart';
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer.periodic(const Duration(seconds: 5), (timer) {
       Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
         builder: (context) {
-          return const HomePage();
+          return const RootPage();
         },
       ), (route) => false);
     });
@@ -77,7 +77,7 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            "Expanse Tracker",
+            "Saima's Makeover",
             style: GoogleFonts.caveat(
               color: Colors.white,
               fontSize: 40.sp,

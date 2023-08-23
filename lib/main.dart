@@ -22,6 +22,9 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             scaffoldBackgroundColor: const Color(0xff0B0C1E),
+            floatingActionButtonTheme: FloatingActionButtonThemeData(
+              iconSize: 25.sp,
+            ),
           ),
           home: const SplashScreen(),
         );
