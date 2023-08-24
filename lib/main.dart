@@ -1,8 +1,8 @@
+import 'package:expanse_manager/Views/Pages/Splash%20Screen/SplashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'Views/Splash Screen/SplashScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
