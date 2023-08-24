@@ -1,9 +1,10 @@
 // ignore_for_file: file_names
 
-import 'package:expanse_manager/Pages/HomePage/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../HomePage/HomePage.dart';
 
 class RootPage extends StatefulWidget {
   const RootPage({super.key});

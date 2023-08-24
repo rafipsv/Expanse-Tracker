@@ -2,10 +2,11 @@
 
 import 'dart:async';
 
-import 'package:expanse_manager/Pages/RootPage/RootPage.dart';
+import 'package:expanse_manager/Views/Styles/SplashScreenStyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:expanse_manager/Styles/SplashScreenStyles.dart';
+
+import '../RootPage/RootPage.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

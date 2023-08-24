@@ -1,9 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:animate_do/animate_do.dart';
+import 'package:expanse_manager/Views/Styles/HomePageStyles.dart';
 import 'package:flutter/material.dart';
 
-import '../../../Styles/HomePageStyles.dart';
+
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});

@@ -1,12 +1,13 @@
 // ignore_for_file: file_names
 
-import 'package:expanse_manager/Pages/HomePage/Widgets/FloatingButton.dart';
-import 'package:expanse_manager/Pages/HomePage/Widgets/HomeBody.dart';
-import 'package:expanse_manager/Pages/HomePage/Widgets/HomeDetailsBox.dart';
-import 'package:expanse_manager/Pages/HomePage/Widgets/HomeTop.dart';
-import 'package:expanse_manager/Styles/HomePageStyles.dart';
+import 'package:expanse_manager/Views/Styles/HomePageStyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'Widgets/FloatingButton.dart';
+import 'Widgets/HomeBody.dart';
+import 'Widgets/HomeDetailsBox.dart';
+import 'Widgets/HomeTop.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

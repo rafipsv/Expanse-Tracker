@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:animate_do/animate_do.dart';
-import 'package:expanse_manager/Styles/HomePageStyles.dart';
+import 'package:expanse_manager/Views/Styles/HomePageStyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

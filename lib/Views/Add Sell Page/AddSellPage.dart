@@ -1,8 +1,10 @@
 // ignore_for_file: file_names
 
+import 'package:expanse_manager/Views/Styles/AddSellPageStyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:expanse_manager/Styles/AddSellPageStyles.dart';
+
+import 'package:intl/intl.dart';
 
 class AddSellPage extends StatefulWidget {
   const AddSellPage({super.key});
@@ -15,6 +17,10 @@ class _AddSellPageState extends State<AddSellPage> {
   TextEditingController titleController = TextEditingController();
   TextEditingController descriptionController = TextEditingController();
   TextEditingController totalAmountController = TextEditingController();
+  String day = "";
+  String month = "";
+  String year = "";
+  String fullDate = "";
   @override
   void initState() {
     super.initState();
@@ -26,6 +32,12 @@ class _AddSellPageState extends State<AddSellPage> {
     titleController.dispose();
     descriptionController.dispose();
     totalAmountController.dispose();
+  }
+
+  void setDate() {
+    setState(() {
+      day = DateFormat.d().format(DateTime.now());
+    });
   }
 
   @override
@@ -51,6 +63,7 @@ class _AddSellPageState extends State<AddSellPage> {
                     debugPrint(titleController.text);
                     debugPrint(descriptionController.text);
                     debugPrint(totalAmountController.text);
+                    setDate();
                   },
                   child: addSellButton(),
                 ),
